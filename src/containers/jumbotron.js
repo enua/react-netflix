@@ -1,3 +1,4 @@
+import React from 'react';
 import jumbotronData from '../fixtures/jumbo.json';
 import { Jumbotron } from '../components'
 
