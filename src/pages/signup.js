@@ -30,6 +30,7 @@ export default function Signup() {
             photoURL: Math.floor(Math.random() + 5) + 1,
           })
           .then(() => {
+            localStorage.setItem('netflix_user', JSON.stringify(result));
             history.push(ROUTES.BROWSE);
           })
       )

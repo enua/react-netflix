@@ -22,8 +22,9 @@ export default function Signin() {
     firebase
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
-      .then(() => {
+      .then((result) => {
         // push to /browse
+        localStorage.setItem('netflix_user',  JSON.stringify(result))
         history.push(ROUTES.BROWSE);
       })
       .catch((error) => {
