@@ -3,5 +3,15 @@ import { render } from 'react-dom';
 import 'normalize.css';
 import App from './app';
 import { Styles } from './styles/styles';
+import { firebase } from './lib/firebase.prod';
+import { FirebaseContext } from './context/firebase';
 
-render(<><Styles /><App /></>, document.getElementById('root'));
+render(
+  <>
+    <FirebaseContext.Provider value={{ firebase }}>
+      <Styles />
+      <App />
+    </FirebaseContext.Provider>
+  </>,
+  document.getElementById('root')
+);
