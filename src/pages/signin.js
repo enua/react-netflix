@@ -24,7 +24,6 @@ export default function Signin() {
       .signInWithEmailAndPassword(emailAddress, password)
       .then((result) => {
         // push to /browse
-        localStorage.setItem('netflix_user',  JSON.stringify(result))
         history.push(ROUTES.BROWSE);
       })
       .catch((error) => {
