@@ -1,6 +1,7 @@
 import React from 'react';
 import { useContent } from '../hooks';
 import { selectionFilter } from '../utils/selection-filter';
+import { BrowseContainer } from '../containers/browser';
 
 export default function Browse() {
   // series and the films
@@ -9,11 +10,10 @@ export default function Browse() {
 
   // slides
   const slides = selectionFilter({ series, films });
-  console.log(slides)
   
   // TODO: pass it to the browse container
 
   return (
-    <p>browse</p>
+    <BrowseContainer slides={slides}/>
   );
 }
