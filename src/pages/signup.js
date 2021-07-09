@@ -63,6 +63,7 @@ export default function Signup() {
               
               <Form.Input
                 placeholder="Password"
+                type="password"
                 value={password}
                 onChange={({ target }) => setPassword(target.value)}
               />

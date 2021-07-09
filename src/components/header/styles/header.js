@@ -49,3 +49,32 @@ export const ButtonLink = styled(ReactRouterLink)`
     background-color: #f40612;
   }
 `;
+
+export const Feature = styled(Container)`
+  padding: 150px 0 500px 0;
+  flex-direction: column;
+  algin-items: nomral;
+  width: 50%;
+
+  @media (max-width: 1100px) {
+    
+  }
+`;
+
+export const Text = styled.p`
+  color: white;
+  font-size: 22px;
+  line-height: normal;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+  margin: 0;
+`;
+
+export const FeatureCallOut = styled.h2`
+  width: 100%;
+  color: white;
+  font-size: 32px;
+  line-height: normal;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+  margin: 0;
+  margin-bottom: 20px;
+`;

@@ -50,6 +50,7 @@ export default function Signin() {
               />
               <Form.Input
                 placeholder="Password"
+                type="password"
                 value={password}
                 onChange={({ target }) => setPassword(target.value)}
               />
